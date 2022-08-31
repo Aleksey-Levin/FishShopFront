@@ -1,0 +1,881 @@
+@font-face {
+    font-family: 'font-lights';
+    /*a name to be used later*/
+    src: url('/static/fonts/Comfortaa-Light.ttf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'font-bold';
+    /*a name to be used later*/
+    src: url('/static/fonts/Comfortaa-Bold.ttf');
+    /*URL to font*/
+}
+
+.card-columns {
+    column-count: 6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+}
+
+.btn {
+    border: none;
+}
+
+.icon {
+    padding: 5px;
+    padding-right: 10px;
+    background-color: rgb(230, 230, 230);
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.gramms_and_count {
+    display: flex;
+}
+
+.dropdown-menu-right {
+    border-radius: 20px;
+}
+
+.errorText {
+    padding-top: 10px;
+    margin-bottom: 40px;
+    color: red;
+    white-space: inherit;
+}
+.goodText{
+    white-space: inherit;
+}
+.card-category{
+    font-size: 20px;
+}
+nav {
+    display: flex;
+}
+
+.dropdown-item {
+    display: flex;
+}
+.icon{
+    cursor: pointer;
+}
+.cart {
+    margin-right: 20px;
+}
+.card-img-top{
+    cursor: pointer;
+}
+#number {
+    margin-right: 20px;
+}
+
+.home {
+    margin-right: 20px;
+}
+.nav_content{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* Шапка */
+.text-center input {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .person {
+        margin-left: 0;
+    }
+
+    .person {
+        margin-left: 0;
+    }
+
+    #bb {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+}
+
+.number::placeholder {
+    color: red;
+}
+
+@media (max-width: 450px) {
+    .cart {
+        margin-right: -10px;
+    }
+
+    .person {
+        margin-right: 10px;
+    }
+
+    #bb {
+        margin-right: 10px;
+    }
+}
+
+.card-img-top {
+    height: 300px;
+    border-radius: 36px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    width: 200px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 960px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+.sharebtn {
+    border: none;
+    background-color: transparent;
+    width: 60px;
+    height: 35px;
+}
+
+.shareIc {
+    width: 50px;
+    height: 40px;
+    padding: 8px;
+}
+
+.btn.gramme:focus {
+    background-color: rgb(160, 0, 0);
+}
+
+.ikr {
+    background-color: rgb(255, 152, 152);
+}
+
+.fishes {
+    background-color: rgb(250, 192, 158);
+}
+
+.sea {
+    background-color: rgb(170, 132, 221);
+}
+
+.krv {
+    background-color: rgb(247, 170, 119);
+}
+
+.all {
+    background-color: rgb(139, 181, 245);
+}
+
+.closebtn {
+    height: 40px;
+    color: white;
+}
+
+.selected {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 2px 5px 20px 1px #358df1;
+}
+
+.selected:focus {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 2px 5px 20px 1px #358df1;
+}
+
+.kategor {
+    color: white;
+    margin: 2%;
+}
+
+.kategor:hover {
+    color: white;
+}
+
+
+.card {
+    margin: 10px;
+}
+.closebtn {
+    height: 40px;
+    color: white;
+}
+
+.inform:hover .courier {
+    filter: brightness(20%);
+}
+
+.inform:hover .read-more {
+    visibility: visible;
+}
+.availableCountDiv{
+    display: flex;
+}
+.read-more {
+    visibility: hidden;
+    color: white;
+    font-size: 16px;
+}
+
+.card-img {
+    border-radius: 36px;
+}
+
+.adding {
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.imgBlock:hover {
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    box-shadow: 2px 5px 20px 1px #8cb8eb;
+    border-radius: 36px;
+}
+.card:hover .adding {
+    display: inline;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: auto;
+}
+
+.icon {
+}
+
+#filter {
+    margin-left: 40px;
+    width: 50vh;
+}
+
+@media (max-width: 1040px) {
+    #filter {
+        margin-left: 0px;
+        width: 25vh;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+}
+
+.searching-icon {
+    display: none;
+}
+
+.card-img-top-mdl {
+    border-radius: 36px;
+    object-fit: cover;
+    width: 200px;
+}
+
+
+/*  Окно с заказом  */
+
+.your_application {
+    color: #000000;
+    font-family: "Muller Narrow - Extra Bold";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 3px;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: "Muller Narrow - Extra Bold";
+    src: url(/static/fonts/MullerNarrow-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Muller Narrow";
+    src: url(/static/fonts/mullernarrow-light.ttf);
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/static/fonts/Comfortaa.ttf);
+}
+
+.app_position {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.name_and_count {
+    margin-left: 94px;
+    margin-top: -15px;
+}
+
+.meal_picture {
+    width: 200px;
+    height: 200px;
+    margin-left: 95px;
+    border-radius: 33px;
+    background-color: #d0d0d0;
+    margin-right: 30px;
+}
+
+.position_name {
+    font-family: "Muller Narrow";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+}
+
+.gramms_and_count {
+    font-family: "Muller Narrow";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+}
+
+.position_price {
+    display: flex;
+    font-family: "Muller Narrow";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+}
+
+.app_amount {
+    display: flex;
+    font-family: "Muller Narrow";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 90px;
+    letter-spacing: 2.5px;
+    margin-left: 95px;
+    margin-top: 91px;
+}
+
+.remove_and_add_buttons {
+    display: flex;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.remove_and_add_buttons input {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.basket_empty {
+    text-align: center;
+    width: 100vw;
+    display: none;
+    font-family: "Muller Narrow";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 2.5px;
+    padding-bottom: 30px;
+}
+.check_out {
+    width: 285px;
+    height: 70px;
+    color: #d0d0d0;
+    font-family: "Muller Narrow";
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 90px;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    border: none;
+    border-radius: 33px;
+    background-color: #c52125;
+}
+
+.check_out_button {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.footer_items {
+    color: #010101;
+    font-family: "Muller Narrow - Extra Bold";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    line-height: normal;
+}
+
+.footer_links {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.footer_links:hover {
+    color: #c52125;
+    text-decoration: none;
+}
+
+/*------------Форма заказа ---------------- */
+.popup__overlay {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    text-align: center
+}
+
+.order-form {
+    display: flex;
+    background: rgb(255, 255, 255);
+    border-radius: 14px;
+    box-shadow: 1px 0px 5px rgb(125, 125, 125);
+    box-sizing: border-box;
+    height: 100px;
+    width: 430px;
+    padding: 20px;
+    margin: 100px auto;
+    position: relative;
+    justify-content: center;
+}
+
+.order-form p {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    top: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*------------конец Формы заказа ---------------- */
+
+.card-columns {
+    column-count: 6;
+}
+
+.container > div {
+    transition: 0s;
+}
+
+.btn {
+    border: none;
+    font-family: 'font-lights';
+}
+
+.categories {
+    justify-content: center;
+}
+
+.icon {
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.description {
+    word-break: break-word;
+    padding-bottom: 30px;
+    white-space: break-spaces;
+}
+
+.dropdown-menu-right {
+    border-radius: 20px 20px 20px 20px;
+}
+
+.number::placeholder {
+    color: red;
+}
+.grammeBlock{
+    margin-top: 10px;
+}
+.gramme {
+    width: 60px;
+    margin-right: 10px;
+    height: 35px;
+    padding: 0;
+}
+.gramme2{
+    font-size: 20px;
+}
+.card-img-top {
+    border-radius: 36px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    width: 200px;
+    display: inline-block;
+    font-family: 'font-bold';
+}
+
+@media screen and (max-width: 960px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #filter {
+        width: 512px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-name {
+        font-size: 14px;
+    }
+
+    .card-category {
+        font-size: 16px;
+    }
+    .errorText{
+        margin-bottom: 0px;
+    }
+    .card-img-top-mdl{
+        width: 100% !important;
+    }
+    .price {
+        font-size: 16px ;
+    }
+    .description{
+        margin-top: 0 !important;
+    }
+    .errorText{
+        font-size: 12px;
+    }
+    .goodText{
+        font-size: 12px;
+    }
+    .gramme {
+        font-size: 8px;
+    }
+    .gramme2{
+        font-size: 16px;
+    }
+    .description{
+        padding-bottom: 10px;
+    }
+    .cart {
+        height: 30px;
+        font-size: 8px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .grammembl {
+        height: 30px;
+        width: 39px;
+    }
+
+    .shareIc {
+        height: 10px;
+        width: 20px;
+    }
+
+    .sharebtn {
+        width: 30px;
+        height: 15px;
+        size: 20px;
+    }
+    .closebtn{
+        height: 30px;
+        font-size: 8px;
+    }
+}
+
+.sharebtn {
+    border: none;
+    background-color: transparent;
+    width: 60px;
+    height: 35px;
+}
+
+.shareIc {
+    width: 50px;
+    height: 40px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 720px) {
+    .card-columns {
+        column-count: 2;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .kategor {
+        font-size: 8px;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    .brand {
+        height: 30px;
+        width: 30px;
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .home {
+        width: 75px;
+        font-size: 8px;
+    }
+}
+
+.btn.gramme:focus {
+    background-color: rgb(160, 0, 0);
+}
+
+.ikr {
+    background-color: rgb(255, 152, 152);
+}
+
+.fishes {
+    background-color: rgb(250, 192, 158);
+}
+
+.sea {
+    background-color: rgb(170, 132, 221);
+}
+
+.krv {
+    background-color: rgb(247, 170, 119);
+}
+
+.all {
+    background-color: rgb(139, 181, 245);
+    width: 60px;
+}
+
+
+.kategor {
+    color: white;
+    margin: 2%;
+}
+
+.kategor:hover {
+    color: white;
+}
+
+.card {
+    margin: 10px;
+}
+
+.inform:hover .courier {
+    filter: brightness(20%);
+}
+
+.inform:hover .read-more {
+    visibility: visible;
+}
+
+.read-more {
+    visibility: hidden;
+    color: white;
+    font-size: 16px;
+}
+
+.card-img {
+    border-radius: 36px;
+}
+
+.adding {
+    display: none;
+    visibility: hidden;
+}
+
+.card:hover .adding {
+    display: inline;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: auto;
+}
+
+.searching-icon {
+    display: none;
+}
+
+.card-img-top-mdl {
+    border-radius: 36px;
+    object-fit: cover;
+    width: 200px;
+}
+/* Set a style for all buttons */
+.modalWindow_button {
+    border-radius: 50px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.containerBasket {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modalBasket {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-contentBasket {
+    border-radius: 20px;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.goodOrder{
+    display: none;
+    text-align: center;
+}
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+.goodText{
+    color:lawngreen;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+input[type=text], input[type=password] {
+    border-radius: 50px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.availableCount{
+    color:greenyellow;
+}
+.availableCountP{
+    color:greenyellow;
+}
+.card-columns .card{
+    height: 450px; !important;
+}

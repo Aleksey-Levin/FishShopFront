@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'media.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Ikra v gorode</title>
+</head>
+
+<body>
+    <nav class="navbar justify-content-around navbar-expand-lg navbar-light bg-light">
+
+        <a class="navbar-brand  " href="">
+            <img class="brand" src="{% static 'img/logo.png' %}" width="50" height="50" alt="logo">
+        </a>
+        <a href="{% url 'main' %}" class = "home"> <button type="button " class="btn btn-dark rounded-pill home ">Главная</button></a>
+
+
+
+
+        <form class="form-inline  " id="gg">
+
+            <input class="form-control rounded-pill searching" id="filter" type="search" placeholder="искать" aria-label="Search">
+
+        </form>
+
+        <div class="dropdown searching-icon " id="bb">
+            <img class="rounded-pill icon" src="{% static 'img/search.png' %}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="icon">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" style="border: none;">
+
+
+                <input class="form-control rounded-pill searching" id="filterSmall" type="search" placeholder="искать" aria-label="Search">
+
+
+
+            </div>
+        </div>
+
+        <form class="form-inline numb">
+            <input class="form-control rounded-pill number" style=" height: 45px;" type="text" placeholder="+7 (495) 220-44-24" readonly>
+        </form>
+
+
+
+<!--        <div class="dropdown ">-->
+<!--            <img class="rounded-pill icon profile" src="{% static 'img/user_5614679.png' %}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="icon">-->
+<!--            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">-->
+<!--                <a class="dropdown-item" href="#" id = "profile">Профиль</a>-->
+<!--                <a class="dropdown-item" href="#" id = "order">Мои заказы</a>-->
+<!--                <a class="dropdown-item" href="#" id = "out">Выйти</a>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="dropdown">
+            <img class="rounded-pill icon iconic basket" src="{% static 'img/cart_4585350.png' %}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="icon">
+            <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="">Товаров:&nbsp; <p class = "countGoods"></p></a>
+                <a class="dropdown-item" href="">Сумма:&nbsp; <p class = "costOrder"></p>р</a>
+                <a class="dropdown-item" href="{% url 'basket' %}">Оформить</a>
+            </div>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="categories mt-5 mb-5 ml-1  d-flex ">
+
+<!--            <button type="button " class="btn  rounded-pill kategor ikr" id="ikrabtn">Икра</button>-->
+<!--            <button type="button" class="btn  rounded-pill kategor fishes" id="fishbtn">Рыба</button>-->
+<!--            <button type="button" class="btn  rounded-pill kategor sea" id="seafoodbtn">Морепродукты</button>-->
+<!--            <button type="button" class="btn rounded-pill kategor krv" id="krevetkibtn">Креветки</button>-->
+<!--            <button type="button" class="btn  rounded-pill kategor all selected" id="all">все</button>-->
+
+
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="card-columns" id="cards">
+
+        </div>
+    </div>
+    <!--Модальное окно заказа-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6" id="cc">
+                            <div class="card-modal-content ">
+                                <img class="card-img-top-mdl" src="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="card-name"></h3>
+                            <p class="card-category">на стороне Бэка</p>
+                            <p class="price">1550,00 P-2900,00 P На Бэке</p>
+                            <div class="grammeBlock">
+                                <p class="gramme gramme2">Граммовка: <p class = "grammeCount">Не выбрано</p></p>
+                                <p class = "goodText"></p>
+                                <p class = "errorText"></p>
+                            </div>
+                            <button type="button" class="btn btn-dark rounded-pill cart mb-2" style="background-color:rgb(160, 0, 0);">В корзину</button>
+                            <div class="description mt-5">
+                                <p class="description">Икра .. реально бери, не дорогая же На бэке </p>
+                            </div>
+                            <p class = "answer"></p>
+                            <button type="button" class="btn rounded-pill closebtn" data-dismiss="modal" style="background-color:rgb(160, 0, 0);">Закрыть</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Модальное окно заказа-->
+    <script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+    <script src="{% static 'js/main/script.js' %}"></script>
+    <script src="{% static 'js/main/index.js' %}" type="module"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+
+
+
+</body>
+
+</html>
